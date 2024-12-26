@@ -19,68 +19,63 @@
   <meta property="og:site_name" content="sudiplun's Portfolio" />
   <title>Sudiplun's Portfilio</title>
   <!--import css-->
-  <link rel="stylesheet" type="" href="styles/style.css">
-  <link rel="stylesheet" href="styles/blink.css">
+  <!--<link rel="stylesheet" type="" href="styles/style.css">-->
+  <!--<link rel="stylesheet" href="styles/blink.css">-->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-white ">
   <!--Navigation -->
-  <nav>
-    <div><img class="avatar" src="images/logo.webp" alt="Sudip Lun logo"></div>
-    <ul class="nav-links">
+  <nav class="flex justify-between w-3/5 my-5 mx-auto rounded-xl shadow-lg shadow-slate-500 h-10 px-5">
+    <img class="w-8 h-8 rounded-full" src="images/logo.webp" alt="Sudip Lun logo">
+    <ul class="flex gap-11 items-center">
       <li><a href="#profile">Profile</a></li>
       <li><a href="#exp">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#edu">Education</a></li>
-      <li style="font-weight:bold; text-decoration: underline wavy;"><a target="_blank"
+      <li class="font-bold underline decoration-wavy"><a target="_blank"
           href="https://luniox.netlify.app/">BLOG</a></li>
     </ul>
-    <div class="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
   </nav>
 
-  <div class="container">
+  <div class="w-3/5 flex flex-col items-center h-auto m-auto py-12">
 
     <!--hanger dispplay-->
-    <section>
-      <div class="two">
-        <span class="blink_me"></span>
-        <p>Available for Work</p>
+    <section class="flex flex-col gap-4">
+      <div class="text-center">
+        <!--<span></span>-->
+        <p >Available for Work</p>
       </div>
-      <div>
-        <h1>Sudip Lun</h1>
-        <p>Web Developer and Linux Enthusiasm </p>
+        <h1 class="font-bold text-4xl">Sudip Lun</h1>
+        <p>Web Developer & Linux Enthusiasm </p>
+      <div class="flex gap-8"><button class="rounded-xl text-white py-1 px-3 bg-slate-900">Send Email</button>
+          <button class="bg-slate-400 py-1 px-3 rounded-xl ">Download CV</button>
       </div>
-      <div class="two"><button>Send Email</button><button>Download cv</button></div>
     </section>
 
     <!--PROFILE-->
-    <section class="two about" id="profile">
-      <div class="img-wrapper">
-        <img src="images/about.webp" alt="about img">
-      </div>
-      <div class="about-wrapper">
-        <div class="content">
+    <section id="profile" class="flex my-12">
+        <img src="images/about.webp" alt="about img" class="w-1/2 h-full rounded-xl mx-4">
+      <div>
+        <div>
           <h3>Professional Profile</h3>
           <p>I'm renaissance person often considered to be well-rounded and versatile. I am driven by an insatiable
             curiosity and a desire to continuously learn and grow. </p>
           <!--FIX: Align-me-->
-          <div class="location"><img src="images/location.png" alt="location icon">Kathmandu, Nepal</div>
+          <!--<div><img src="images/location.png" alt="location icon" >Kathmandu, Nepal</div>-->
+
         </div>
       </div>
     </section>
 
     <!--Education -->
     <!--TODO: Apply style-->
-    <section class="Education" id="edu">
+    <section id="edu">
       <div>
         <h3>Education</h3>
         <p>Degrees and certifications in the specialized fields of data science and business analytics.</p>
       </div>
-      <div class="edu-container">
+      <div>
         <div>
           <h4>Nepal Police School</h4>
           <p>+2 Science </p>
@@ -129,18 +124,16 @@
     <!--TODO: Apply style-->
     <section>
       <div>
-        <!--<img src="images/logo.webp" alt="logo" class="avatar">-->
+        <!--<img src="images/logo.webp" alt="logo" >-->
         <h4>Feel free to visit</h4>
         <div>
           <!--socail links-->
           <a href="https://www.linkedin.com/in/sudiplun/">
-            <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="linkden icon"
-              class="social-link">
+            <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="linkden icon">
           </a>
           <!--github logo-->
           <a href="https://github.com/sudiplun/">
-            <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000" alt="github logo"
-              class="social-link">
+            <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000" alt="github logo">
           </a>
           <!--TODO: Add more links-->
         </div>
@@ -149,8 +142,8 @@
   </div>
 
   <!--import js -->
-  <script src="scripts/script.js">
-  </script>
+  <!--<script src="scripts/script.js">-->
+  <!--</script>-->
 </body>
 
 </html>
