@@ -1,0 +1,25 @@
+{
+  "name": "sudiplun.github.io",
+  "version": "1.0.0",
+  "description": "sudiplun personal site",
+  "homepage": "https://github.com/sudiplun/sudiplun.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/sudiplun/sudiplun.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudiplun/sudiplun.github.io.git"
+  },
+  "license": "ISC",
+  "author": "Sudip Lun",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch",
+    "build": " npx tailwindcss -i ./src/css/input.css -o ./dist/output.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

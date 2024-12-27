@@ -19,51 +19,53 @@
   <meta property="og:site_name" content="sudiplun's Portfolio" />
   <title>Sudiplun's Portfilio</title>
   <!--import css-->
-  <!--<link rel="stylesheet" type="" href="styles/style.css">-->
+  <link rel="stylesheet" type="" href="../dist/output.css">
   <!--<link rel="stylesheet" href="styles/blink.css">-->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!--<script src="https://cdn.tailwindcss.com"></script>-->
 </head>
 
 <body class="bg-white ">
   <!--Navigation -->
   <nav class="flex justify-between w-3/5 my-5 mx-auto rounded-xl shadow-lg shadow-slate-500 h-10 px-5">
-    <img class="w-8 h-8 rounded-full" src="images/logo.webp" alt="Sudip Lun logo">
-    <ul class="flex gap-11 items-center">
+    <img class="w-8 h-8 rounded-full" src="../assets/images/logo.webp" alt="Sudip Lun logo">
+    <!--<ul class="flex gap-11 items-center md:hidden">-->
+    <ul class="hidden items-center md:flex md:gap-x-12 md:items-center md:justify-center">
       <li><a href="#profile">Profile</a></li>
       <li><a href="#exp">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#edu">Education</a></li>
-      <li class="font-bold underline decoration-wavy"><a target="_blank"
-          href="https://luniox.netlify.app/">BLOG</a></li>
+      <li class="font-bold underline decoration-wavy"><a target="_blank" href="https://luniox.netlify.app/">BLOG</a>
+      </li>
     </ul>
   </nav>
 
-  <div class="w-3/5 flex flex-col items-center h-auto m-auto py-12">
+  <div class="w-3/5 flex flex-col items-center h-auto m-auto my-20">
 
     <!--hanger dispplay-->
-    <section class="flex flex-col gap-4">
+    <section class="flex flex-col gap-4 my-16">
       <div class="text-center">
         <!--<span></span>-->
-        <p >Available for Work</p>
+        <p>Available for Work</p>
       </div>
-        <h1 class="font-bold text-4xl">Sudip Lun</h1>
-        <p>Web Developer & Linux Enthusiasm </p>
-      <div class="flex gap-8"><button class="rounded-xl text-white py-1 px-3 bg-slate-900">Send Email</button>
-          <button class="bg-slate-400 py-1 px-3 rounded-xl ">Download CV</button>
+      <h1>Sudip Lun</h1>
+      <p>Web Developer & Linux Enthusiasm </p>
+      <div class="md:flex gap-8 "><button class="rounded-xl text-white py-1 px-3 bg-slate-900">Send Email</button>
+
+        <button class="bg-slate-200 py-1 px-3 rounded-xl ">Download CV</button>
       </div>
     </section>
 
     <!--PROFILE-->
-    <section id="profile" class="flex my-12">
-        <img src="images/about.webp" alt="about img" class="w-1/2 h-full rounded-xl mx-4">
-      <div>
-        <div>
-          <h3>Professional Profile</h3>
-          <p>I'm renaissance person often considered to be well-rounded and versatile. I am driven by an insatiable
-            curiosity and a desire to continuously learn and grow. </p>
-          <!--FIX: Align-me-->
-          <!--<div><img src="images/location.png" alt="location icon" >Kathmandu, Nepal</div>-->
-
+    <section id="profile" class="flex flex-col md:flex-row my-12 mx-auto">
+      <img src="../assets/images/about.webp" alt="about img" class="w-3/5 h-full rounded-xl mx-4">
+      <div class="p-4 bg-slate-50 rounded-xl">
+        <h3>Professional Profile</h3>
+        <p>I'm renaissance person often considered to be well-rounded and versatile. I am driven by an
+          insatiable curiosity and a desire to continuously learn and grow. </p>
+        <!--FIX: Align-me-->
+        <div class="flex p-4">
+          <img src="../assets/images/location.png" alt="location icon" class="h-6 px-4">
+          <p>Kathmandu, Nepal</p>
         </div>
       </div>
     </section>
