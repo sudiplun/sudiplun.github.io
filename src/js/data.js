@@ -27,8 +27,6 @@ const data = {
   ],
 };
 
-const edu = document.getElementById("education");
-
 //location
 const locationDiv = document.getElementById("city");
 //Create the <p> element
@@ -36,6 +34,7 @@ const cityP = document.createElement("p");
 cityP.textContent = data.city;
 locationDiv.appendChild(cityP);
 
+const edu = document.getElementById("education");
 data.Education.forEach((e) => {
   const instituationHead = document.createElement("h3");
   //instituationHead.classList.add("font-bold");
@@ -63,8 +62,8 @@ document.getElementById("devSkills").innerHTML = data.skills
   )
   .join("");
 
+//Socail Media with icon link
 const socialLinkContainer = document.getElementById("socialMedia");
-
 socialLinkContainer.innerHTML = data.social
   .map(
     (data) =>
