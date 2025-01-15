@@ -24,10 +24,19 @@
 
 <body class="bg-neutral-100">
   <!--Navigation -->
-  <nav class="mx-auto my-5 flex h-10 w-3/5 justify-between rounded-xl px-5 shadow-lg shadow-slate-500">
-    <img class="h-8 w-8 rounded-full" src="./src/assets/images/logo.webp" alt="Sudip Lun logo" />
-    <!--<ul class="flex gap-11 items-center md:hidden">-->
-    <ul class="hidden items-center md:flex md:items-center md:justify-center md:gap-x-12">
+  <nav class="mx-auto my-5 flex h-10 w-3/5 items-center justify-between rounded-xl px-5 shadow-lg shadow-slate-300">
+    <a href="https://sudiplun.netlify.app">
+      <img class="h-8 w-8 rounded-full" src="./src/assets/images/logo.webp" alt="Sudip Lun logo" />
+    </a>
+    <!-- Hamburger Icon -->
+    <button id="menu-toggle" class="block md:hidden">
+      <span class="hamburger mb-1 block h-1 w-8 bg-black"></span>
+      <span class="hamburger mb-1 block h-1 w-8 bg-black"></span>
+      <span class="hamburger block h-1 w-8 bg-black"></span>
+    </button>
+    <!--Nav Links-->
+    <ul id="nav-links"
+      class="z-1 absolute top-[5rem] hidden w-[50%] items-center gap-y-6 bg-slate-300 p-5 md:relative md:top-auto md:z-0 md:flex md:items-center md:justify-center md:gap-x-12 md:bg-transparent">
       <li><a href="#profile">Profile</a></li>
       <li><a href="#exp">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -58,8 +67,8 @@
     <!--PROFILE-->
     <div id="profile" class="mx-auto my-12 flex-col md:flex md:w-[80%] md:flex-row">
       <img src="./src/assets/images/about.webp" alt="about img"
-        class="mx-4 my-6 h-96 w-[96%] rounded-xl object-cover md:my-0 md:h-auto" />
-      <div class="rounded-xl bg-slate-50 p-4">
+        class="mx-4 my-6 h-96 w-full rounded-xl object-cover md:my-0 md:h-auto md:w-2/5" />
+      <div class="w-full rounded-xl bg-slate-50 p-4 md:w-3/5">
         <h2>Professional Profile</h2>
         <p>
           I'm renaissance person often considered to be well-rounded and
@@ -135,6 +144,7 @@
   </div>
   <!--import js -->
   <script src="./src/js/data.js"></script>
+  <script src="./src/js/script.js"></script>
 </body>
 
 </html>

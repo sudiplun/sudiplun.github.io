@@ -16,12 +16,12 @@ const data = {
   social: [
     {
       href: "https://www.linkedin.com/in/sudiplun/",
-      src: "../assets/images/social-media/linkedin.svg",
+      src: "./src/assets/images/social-media/linkedin.svg",
       desc: "linkedin icon",
     },
     {
       href: "https://github.com/sudiplun/",
-      src: "../assets/images/social-media/github.svg",
+      src: "./src/assets/images/social-media/github.svg",
       desc: "github icon",
     },
   ],

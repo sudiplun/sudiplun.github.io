@@ -1,6 +1,7 @@
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
 
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("hidden"); // Show/hide the menu
+  navLinks.classList.toggle("grid"); // Ensure flex layout for links
 });
