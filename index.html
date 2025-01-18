@@ -1,150 +1,186 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="I'm Sudip Lun Web Developer and Linux Enthusiasm I'm renaissance person often considered to be well-rounded and versatile."
+    />
+    <!-- Keywords -->
+    <meta
+      name="keywords"
+      content="Sudip Lun, sudiplun, Sudip Shrestha, Sudip's Portfolio website"
+    />
+    <!-- Author -->
+    <meta name="author" content="Sudip Lun" />
+    <!-- Open Graph (OG) Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Sudip Lun's personal site." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.sudipshrestha24.com.np" />
+    <meta
+      property="og:image"
+      content="https://www.sudipshrestha24.com.np/images/about.webp"
+    />
+    <meta property="og:site_name" content="sudiplun's Portfolio" />
+    <title>Sudiplun's Portfilio</title>
+    <!--import css-->
+    <link rel="stylesheet" type="" href="./dist/assets/output.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Meta Description -->
-  <meta name="description"
-    content="I'm Sudip Lun Web Developer and Linux Enthusiasm I'm renaissance person often considered to be well-rounded and versatile." />
-  <!-- Keywords -->
-  <meta name="keywords" content="Sudip Lun, sudiplun, Sudip Shrestha, Sudip's Portfolio website" />
-  <!-- Author -->
-  <meta name="author" content="Sudip Lun" />
-  <!-- Open Graph (OG) Meta Tags for Social Sharing -->
-  <meta property="og:title" content="Sudip Lun's personal site." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.sudipshrestha24.com.np" />
-  <meta property="og:image" content="https://www.sudipshrestha24.com.np/images/about.webp" />
-  <meta property="og:site_name" content="sudiplun's Portfolio" />
-  <title>Sudiplun's Portfilio</title>
-  <!--import css-->
-  <link rel="stylesheet" type="" href="./dist/assets/output.css" />
-</head>
+  <body class="bg-neutral-100">
+    <!--Navigation -->
+    <nav
+      class="mx-auto my-5 flex h-10 w-4/5 items-center justify-between rounded-xl px-5 shadow-lg shadow-slate-300 md:w-3/5"
+    >
+      <a href="https://sudiplun.netlify.app">
+        <img
+          class="h-8 w-8 rounded-full"
+          src="./src/assets/images/logo.webp"
+          alt="Sudip Lun logo"
+        />
+      </a>
+      <!-- Hamburger Icon -->
+      <button id="menu-toggle" class="block md:hidden">
+        <span class="hamburger mb-1 block h-1 w-8 bg-black"></span>
+        <span class="hamburger mb-1 block h-1 w-8 bg-black"></span>
+        <span class="hamburger block h-1 w-8 bg-black"></span>
+      </button>
+      <!--Nav Links-->
+      <ul
+        id="nav-links"
+        class="z-1 absolute top-[5rem] hidden w-[50%] items-center gap-y-6 bg-slate-300 p-5 md:relative md:top-auto md:z-0 md:flex md:items-center md:justify-center md:gap-x-12 md:bg-transparent"
+      >
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#exp">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#edu">Education</a></li>
+        <li class="font-bold underline decoration-wavy">
+          <a target="_blank" href="https://luniox.netlify.app/">BLOG</a>
+        </li>
+      </ul>
+    </nav>
 
-<body class="bg-neutral-100">
-  <!--Navigation -->
-  <nav class="mx-auto my-5 flex h-10 w-3/5 items-center justify-between rounded-xl px-5 shadow-lg shadow-slate-300">
-    <a href="https://sudiplun.netlify.app">
-      <img class="h-8 w-8 rounded-full" src="./src/assets/images/logo.webp" alt="Sudip Lun logo" />
-    </a>
-    <!-- Hamburger Icon -->
-    <button id="menu-toggle" class="block md:hidden">
-      <span class="hamburger mb-1 block h-1 w-8 bg-black"></span>
-      <span class="hamburger mb-1 block h-1 w-8 bg-black"></span>
-      <span class="hamburger block h-1 w-8 bg-black"></span>
-    </button>
-    <!--Nav Links-->
-    <ul id="nav-links"
-      class="z-1 absolute top-[5rem] hidden w-[50%] items-center gap-y-6 bg-slate-300 p-5 md:relative md:top-auto md:z-0 md:flex md:items-center md:justify-center md:gap-x-12 md:bg-transparent">
-      <li><a href="#profile">Profile</a></li>
-      <li><a href="#exp">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#edu">Education</a></li>
-      <li class="font-bold underline decoration-wavy">
-        <a target="_blank" href="https://luniox.netlify.app/">BLOG</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="m-auto my-20 flex h-auto w-3/5 flex-col items-center">
-    <!--hanger display-->
-    <div class="my-16 flex flex-col gap-4">
-      <div class="flex items-center text-center">
-        <span class="me-3 ml-2 flex h-3 w-3 rounded-full bg-green-500"></span>
-        <p>Available for Work</p>
-      </div>
-      <h1>Sudip Lun</h1>
-      <p>Web Developer & Linux Enthusiasm</p>
-      <div class="flex gap-8">
-        <button class="rounded-xl bg-slate-900 px-3 py-1 text-white">
-          Send Email
-        </button>
-        <button class="rounded-xl bg-slate-200 px-3 py-1">Download CV</button>
-      </div>
-    </div>
-
-    <!--PROFILE-->
-    <div id="profile" class="mx-auto my-12 flex-col md:flex md:w-[80%] md:flex-row">
-      <img src="./src/assets/images/about.webp" alt="about img"
-        class="mx-4 my-6 h-96 w-full rounded-xl object-cover md:my-0 md:h-auto md:w-2/5" />
-      <div class="w-full rounded-xl bg-slate-50 p-4 md:w-3/5">
-        <h2>Professional Profile</h2>
-        <p>
-          I'm renaissance person often considered to be well-rounded and
-          versatile. I am driven by an insatiable curiosity and a desire to
-          continuously learn and grow.
-        </p>
-        <div id="city" class="mt-4 flex items-center">
-          <img src="./src/assets/images/location.svg" alt="location icon" class="h-4 pr-4" />
+    <div class="m-auto my-20 flex h-auto w-4/5 flex-col items-center md:w-3/5">
+      <!--hanger display-->
+      <div class="my-16 flex flex-col gap-4">
+        <div class="flex items-center text-center">
+          <span class="me-3 ml-2 flex h-3 w-3 rounded-full bg-green-500"></span>
+          <p>Available for Work</p>
+        </div>
+        <h1>Sudip Lun</h1>
+        <p>Web Developer & Linux Enthusiasm</p>
+        <div class="flex gap-8">
+          <button class="rounded-xl bg-slate-900 px-3 py-1 text-white">
+            Send Email
+          </button>
+          <button class="rounded-xl bg-slate-200 px-3 py-1">Download CV</button>
         </div>
       </div>
+
+      <!--PROFILE-->
+      <div
+        id="profile"
+        class="mx-auto my-12 w-4/5 flex-col md:flex md:flex-row"
+      >
+        <img
+          src="./src/assets/images/about.webp"
+          alt="about img"
+          class="mx-4 my-6 h-96 w-full rounded-xl object-cover md:my-0 md:h-auto md:w-2/5"
+        />
+        <div class="w-full rounded-xl bg-slate-50 p-4 md:w-3/5">
+          <h2>Professional Profile</h2>
+          <p>
+            I'm renaissance person often considered to be well-rounded and
+            versatile. I am driven by an insatiable curiosity and a desire to
+            continuously learn and grow.
+          </p>
+          <div id="city" class="mt-4 flex items-center">
+            <img
+              src="./src/assets/images/location.svg"
+              alt="location icon"
+              class="h-4 pr-4"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!--Education -->
+      <section id="edu">
+        <img
+          src="./src/assets/images/academic-hat.svg"
+          alt="academic hat"
+          class="mb-6 h-16 rounded-xl bg-white p-4"
+        />
+        <div>
+          <h2>Education</h2>
+          <p>
+            Degrees and certifications in the specialized fields of computer
+            science.
+          </p>
+        </div>
+        <!--horizontail line-->
+        <hr class="my-4 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+        <div id="education"></div>
+      </section>
+
+      <!--skills-->
+      <section id="skills">
+        <img
+          src="./src/assets/images/skill.svg"
+          alt="Skills icon"
+          class="mb-6 h-16 rounded-xl bg-white p-4"
+        />
+        <div>
+          <h2>Professional Skills</h2>
+          <p>
+            Key competencies essential for navigating and excelling in various
+            professional contexts
+          </p>
+        </div>
+        <!--horizontail line-->
+        <hr class="my-4 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+        <div>
+          <h3>web Development</h3>
+          <ul id="devSkills" class="flex flex-auto flex-wrap"></ul>
+        </div>
+      </section>
+
+      <!--Languages-->
+      <section>
+        <img
+          src="./src/assets/images/language.svg"
+          alt="Skills icon"
+          class="mb-6 h-16 rounded-xl bg-white p-4"
+        />
+        <div>
+          <h2>Languages</h2>
+          <p>
+            Proficient in multiple languages, facilitating effective
+            communication and collaboration in diverse settings.
+          </p>
+        </div>
+        <!--horizontail line-->
+        <hr class="my-4 h-px border-0 bg-gray-200 dark:bg-gray-700" />
+        <div>
+          <h3>English</h3>
+          <p>Proficiency</p>
+          <h3>Nepali</h3>
+          <p>Native proficiency</p>
+        </div>
+      </section>
+
+      <!--Contact-->
+      <section>
+        <div>
+          <h3>Feel free to visit</h3>
+          <div id="socialMedia" class="flex flex-row"></div>
+        </div>
+      </section>
     </div>
-
-    <!--Education -->
-    <section id="edu">
-      <img src="./src/assets/images/academic-hat.svg" alt="academic har" class="mb-6 h-16 rounded-xl bg-white p-4" />
-      <div>
-        <h2>Education</h2>
-        <p>
-          Degrees and certifications in the specialized fields of computer
-          science.
-        </p>
-      </div>
-      <!--horizontail line-->
-      <hr class="my-4 h-px border-0 bg-gray-200 dark:bg-gray-700" />
-      <div id="education"></div>
-    </section>
-
-    <!--skills-->
-    <section id="skills">
-      <img src="./src/assets/images/skill.svg" alt="Skills icon" class="mb-6 h-16 rounded-xl bg-white p-4" />
-      <div>
-        <h2>Professional Skills</h2>
-        <p>
-          Key competencies essential for navigating and excelling in various
-          professional contexts
-        </p>
-      </div>
-      <!--horizontail line-->
-      <hr class="my-4 h-px border-0 bg-gray-200 dark:bg-gray-700" />
-      <div>
-        <h3>web Development</h3>
-        <ul id="devSkills" class="flex flex-auto flex-wrap"></ul>
-      </div>
-    </section>
-
-    <!--Languages-->
-    <section>
-      <img src="./src/assets/images/language.svg" alt="Skills icon" class="mb-6 h-16 rounded-xl bg-white p-4" />
-      <div>
-        <h2>Languages</h2>
-        <p>
-          Proficient in multiple languages, facilitating effective
-          communication and collaboration in diverse settings.
-        </p>
-      </div>
-      <!--horizontail line-->
-      <hr class="my-4 h-px border-0 bg-gray-200 dark:bg-gray-700" />
-      <div>
-        <h3>English</h3>
-        <p>Proficiency</p>
-        <h3>Nepali</h3>
-        <p>Native proficiency</p>
-      </div>
-    </section>
-
-    <!--Contact-->
-    <section>
-      <div>
-        <h3>Feel free to visit</h3>
-        <div id="socialMedia" class="flex flex-row"></div>
-      </div>
-    </section>
-  </div>
-  <!--import js -->
-  <script src="./src/js/data.js"></script>
-  <script src="./src/js/script.js"></script>
-</body>
-
+    <!--import js -->
+    <script src="./src/js/data.js"></script>
+    <script src="./src/js/script.js"></script>
+  </body>
 </html>
