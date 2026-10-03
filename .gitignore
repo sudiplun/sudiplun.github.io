@@ -3,3 +3,4 @@ node_modules/
 docs/
 export.scss
 export/
+dist/
